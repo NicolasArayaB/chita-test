@@ -1,0 +1,15 @@
+<h1>Cotiza con nosotros</h1>
+
+<%= form_with do |form| %>
+  <%= form.label :issueing_rut, 'Rut Emisor: ' %>
+  <%= form.text_field :issueing_rut %>
+  <%= form.label :debtor_rut, 'Rut Deudor: ' %>
+  <%= form.text_field :debtor_rut %>
+  <%= form.label :bill_amount, 'Monto de la factura: ' %>
+  <%= form.number_field :bill_amount %>
+  <%= form.label :bill_number, 'Folio: ' %>
+  <%= form.number_field :bill_number %>
+  <%= form.label :expiration_date, 'Fecha de vencimiento de la factura: ' %>
+  <%= form.date_field :expiration_date %>
+  <%= form.submit 'Cotizar' %>
+<% end %>
