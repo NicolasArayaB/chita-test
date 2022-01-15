@@ -11,7 +11,7 @@
       </div>
       <div class='col'>
         <span class='results'>
-          <%= number_to_currency(@pricing[:financing_cost], precision: 0, delimiter: '.') %>
+          <%= number_to_currency(@pricing[:financing_cost], precision: 0, delimiter: '.') if @pricing %>
         </span>
       </div>
     </div><hr>
@@ -21,7 +21,7 @@
       </div>
       <div class='col'>
         <span class='results'>
-          <%= number_to_currency(@pricing[:receiving_amount], precision: 0, delimiter: '.') %>
+          <%= number_to_currency(@pricing[:receiving_amount], precision: 0, delimiter: '.') if @pricing %>
         </span>
       </div>
     </div>
@@ -32,7 +32,7 @@
       </div>
       <div class='col'>
         <span class='results'>
-          <%= number_to_currency(@pricing[:surplus], precision: 0, delimiter: '.') %>
+          <%= number_to_currency(@pricing[:surplus], precision: 0, delimiter: '.') if @pricing %>
         </span>
       </div>
     </div>

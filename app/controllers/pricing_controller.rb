@@ -18,7 +18,11 @@ class PricingController < ApplicationController
     
     response = Chita::Get_price.calling(url)
     json_response = JSON.parse response
-
-    @pricing = set_result(json_response)
+    if json_response['status'] =='bad_request'
+      redirect_to root_path
+      flash.alert = 'Por favor verifique los datos ingresados'
+    else
+      @pricing = set_result(json_response)
+    end
   end
 end
