@@ -1,7 +1,7 @@
 class PricingController < ApplicationController
   require 'rest-client'
+  
   def index
-    
   end
 
   def get_price

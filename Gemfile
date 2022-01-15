@@ -49,3 +49,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Client for third-party services. Docs: https://github.com/rest-client/rest-client
 gem "rest-client"
+
+# Bootstrap
+gem 'bootstrap', '~> 5.1.3'
