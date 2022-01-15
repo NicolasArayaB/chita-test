@@ -1,0 +1,5 @@
+<h1>Cotización</h1>
+
+<p>Costo de financiamiento: <%= number_to_currency(@financing_cost, precision: 0, delimiter: '.') %></p>
+<p>Giro a recibir: <%= number_to_currency(@receiving_amount, precision: 0, delimiter: '.') %></p>
+<p>Excedentes: <%= number_to_currency(@surplus, precision: 0, delimiter: '.') %></p>
