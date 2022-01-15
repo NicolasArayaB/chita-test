@@ -49,3 +49,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Client for third-party services. Docs: https://github.com/rest-client/rest-client
 gem "rest-client"
+
+# Chilean_rut gem for dni validation. Docs: https://github.com/gonzariosm/chilean_rut
+gem "chilean_rut"
