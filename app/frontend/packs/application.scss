@@ -1,6 +1,35 @@
-h1 {  
-  text-decoration: underline;  
-}  
-  
-// Import Bootstrap v5  
-@import "~bootstrap/scss/bootstrap";  
+@import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+body {
+  background-color: #fafafa;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 16px;
+  color: #5a5a5a;
+}
+
+div.title {
+  background-color: #4d4d4d;
+  border-radius: 6px 6px 0px 0px;
+  color: white;
+}
+
+a {
+  color: #5a5a5a;
+}
+
+a:hover {
+  color: #383838;
+}
+
+span.results {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.wrapper {
+  background-color: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  max-width: 25rem;
+}

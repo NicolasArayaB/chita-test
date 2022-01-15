@@ -1,15 +1,55 @@
-<h1>Cotiza con nosotros</h1>
+<div class='container mt-5'>
+    <div class='container wrapper'>
+      <%= form_with url: get_price_path do |form| %>
+        <div class='row title p-2'>
+          <div class='col text-center'>
+            <h1>Cotiza con nosotros</h1>
+          </div>
+        </div>
+        <div class='row p-2'>
+          <div class='col'>
+            <%= form.label :client_dni, 'Rut Emisor: ', class: 'form-label' %>
+            <%= form.text_field :client_dni, class: 'form-control', required: true %>
+          </div>
+        </div>
+        <div class='row p-2'>
+          <div class='col'>
+            <%= form.label :debtor_dni, 'Rut Deudor: ', class: 'form-label' %>
+            <%= form.text_field :debtor_dni, class: 'form-control', required: true %>
+          </div>
+        </div>
+        <div class='row p-2'>
+          <div class='col'>
+            <%= form.label :document_amount, 'Monto de la factura: ', class: 'form-label' %>
+            <%= form.number_field :document_amount, class: 'form-control', required: true %>
+          </div>
+        </div>
+        <div class='row p-2'>
+          <div class='col'>
+            <%= form.label :folio, 'Folio: ', class: 'form-label' %>
+            <%= form.number_field :folio, class: 'form-control', required: true %>
+          </div>  
+        </div>
+        <div class='row p-2'>
+          <div class='col text-center'>
+            <%= form.label :expiration_date, 'Fecha de vencimiento de la factura: ' %>
+            <%= form.date_field :expiration_date, required: true %>    
+          </div>
+        </div>
+        <div class='row p-2'>
+          <div class='col text-center mt-3'>
+            <%= form.submit 'Cotizar', class: 'btn btn-outline-secondary btn-sm' %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+</div>
 
-<%= form_with url: get_price_path do |form| %>
-  <%= form.label :client_dni, 'Rut Emisor: ' %>
-  <%= form.text_field :client_dni %>
-  <%= form.label :debtor_dni, 'Rut Deudor: ' %>
-  <%= form.text_field :debtor_dni %>
-  <%= form.label :document_amount, 'Monto de la factura: ' %>
-  <%= form.number_field :document_amount %>
-  <%= form.label :folio, 'Folio: ' %>
-  <%= form.number_field :folio %>
-  <%= form.label :expiration_date, 'Fecha de vencimiento de la factura: ' %>
-  <%= form.date_field :expiration_date %>
-  <%= form.submit 'Cotizar' %>
-<% end %>
+
+
+  
+  
+
+
+
+  
