@@ -52,3 +52,6 @@ gem "rest-client"
 
 # Bootstrap
 gem 'bootstrap', '~> 5.1.3'
+
+# JQuery for Bootstrap
+gem 'jquery-rails'
